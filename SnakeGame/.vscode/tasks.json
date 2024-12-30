@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "process",
+        "label": "C/C++: Build .exe",
+        "command": "C:\\MinGW\\bin\\g++.exe",
+        "args": ["-g",
+                 "${workspaceFolder}\\code\\Control.cpp",
+                 "${workspaceFolder}\\code\\Pickup.cpp",
+                 "${workspaceFolder}\\code\\NormalPickup.cpp",
+                 "${workspaceFolder}\\code\\LargePickup.cpp",
+                 "${workspaceFolder}\\code\\Map.cpp",
+                 "${workspaceFolder}\\code\\Snake.cpp",
+                 "${workspaceFolder}\\code\\Main.cpp",
+                 "-o", 
+                 "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+                 "-mconsole",
+                 "-lbgi",
+                 "-lgdi32",
+                 "-lcomdlg32",
+                 "-luuid",
+                 "-loleaut32",
+                 "-lole32",
+                ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "compiler: C:\\MinGW\\bin\\g++.exe"
+      }
+    ]
+  }
